@@ -1,0 +1,18 @@
+.book-details {
+  color: var(--primary-text-lib);
+  background-color: #ffffff;
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1rem;
+  /* min-height: 431px; */
+}
+
+.book-details h2 {
+  margin-bottom: 1rem;
+}
+
+.book-details p {
+  max-width: 650px;
+  margin-bottom: 1rem;
+}

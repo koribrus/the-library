@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--primary-bg-lib);
+  height: 65vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.container {
+  padding: 0 4rem;
+}
+
+.column {
+  height: 100%;
+}
+
+.column-left {
+  background-color: #ffffff;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.column-insert {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 1px solid var(--secondary-bg-lib);
+}
+
+.book-detail {
+  /* padding: 1rem 1rem 0 1rem; */
+}
+
+.book-selection {
+  /* min-height: 323px; */
+}
+
+.book-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+/* for BookDetail component */
+/* .book-detail {
+  height: 300px;
+} */

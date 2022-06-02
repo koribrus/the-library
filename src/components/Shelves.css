@@ -1,0 +1,9 @@
+.shelves {
+  font-family: proxima-nova, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5em;
+}

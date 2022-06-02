@@ -1,0 +1,46 @@
+/* create hover effect. semantic uses jQuery for hover */
+.card {
+  background-color: var(--secondary-bg-lib);
+  /* background-color: #ffffff; */
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 275px;
+  padding: 15px;
+  border: 1px solid var(--secondary-text-lib);
+}
+.image {
+  height: 196px;
+  overflow: hidden !important;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+}
+
+.book-card {
+  max-width: 125px !important;
+}
+
+.book-title {
+  color: var(--primary-text-lib);
+  /* font-family: freighttextcmp-pro, serif; */
+  /* font-family: freight-text-pro, serif; */
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px !important;
+}
+
+.book-year {
+  font-size: 10px;
+}
+
+.book-author {
+  color: var(--secondary-text-lib);
+  font-family: proxima-nova, sans-serif;
+  font-size: 13px !important;
+}

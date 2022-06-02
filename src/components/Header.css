@@ -1,0 +1,27 @@
+.banner {
+  height: 35vh;
+  background-image: url('../img/stock-photo-blurred-bookshelf-many-old-books-in-a-book-shop-or-library-1550267513.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
+}
+
+.banner h1 {
+  color: var(--tertiary-text-lib);
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.banner p {
+  color: var(--tertiary-text-lib);
+  font-family: freight-text-pro, serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.banner-content {
+  width: 20vw;
+}
