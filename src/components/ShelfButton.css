@@ -12,5 +12,6 @@
 
 .btn:hover {
   background-color: var(--tertiary-bg-hover);
+  /* opacity: 0.9; */
   transform: scale(102%);
 }

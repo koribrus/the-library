@@ -8,7 +8,7 @@ const BookItem = ({ book, onBookSelect }) => {
         <img src={book.volumeInfo.imageLinks.thumbnail} />
       </div>
       <div className='content'>
-        <a className='header book-title' href='#'>
+        <a className='book-title' href='#'>
           {book.volumeInfo.title.split(':')[0]}
         </a>
         {/* <div className='meta'>

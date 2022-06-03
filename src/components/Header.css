@@ -1,11 +1,62 @@
-.banner {
+.header {
+  background-color: var(--primary-bg-lib);
   height: 35vh;
-  background-image: url('../img/stock-photo-blurred-bookshelf-many-old-books-in-a-book-shop-or-library-1550267513.jpg');
-  background-position: center;
+}
+
+.navbar {
+  height: 7vh;
+}
+
+.navbar-top {
+  background-color: var(--secondary-text-lib);
+  width: 100vw;
+  height: 0.5vh;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 6.5vh;
+}
+
+.navbar-logo {
+  text-decoration: none;
+  transition: 0.25s ease all;
+}
+
+.navbar-logo:hover p {
+  color: var(--tertiary-bg-hover);
+  opacity: 0.9;
+}
+
+.navbar-content p {
+  color: var(--primary-text-lib);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 0 4rem;
+}
+
+.banner {
+  position: relative;
+  height: 28vh;
+  background-image: url('../img/blurred-background.jpg');
+  background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   padding: 2rem;
+  background: rgba(52, 61, 66, 0.6);
 }
 
 .banner h1 {
@@ -13,15 +64,26 @@
   font-family: freight-text-pro, serif;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 1px;
+  padding: 0.5rem 0;
 }
 
 .banner p {
   color: var(--tertiary-text-lib);
-  font-family: freight-text-pro, serif;
+  /* font-family: freight-big-pro, serif;
   font-weight: 300;
+  font-style: normal; */
+  /* font-family: freighttextcmp-pro, serif;
+  font-weight: lighter;
+  font-style: italic; */
+  font-family: freight-big-pro, serif;
+  font-weight: 400;
   font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.7rem;
 }
 
 .banner-content {
-  width: 20vw;
+  max-width: 400px;
 }

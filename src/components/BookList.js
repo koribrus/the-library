@@ -1,31 +1,60 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import BookItem from './BookItem';
-import { selectBook } from '../actions';
+import { select } from '../redux/books';
+
+// * old redux store
+// import { connect } from 'react-redux';
+// import { selectBook } from '../actions';
+
 import './BookList.css';
 
-class BookList extends React.Component {
-  onBookSelect = (book) => {
-    this.props.selectBook(book);
+const BookList = () => {
+  const { books } = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  const onBookSelect = (book) => {
+    console.log('click');
+    dispatch(select(book));
+    // * old select book action
+    // this.props.selectBook(book);
   };
 
-  renderBooks = () => {
-    const renderedBooks = this.props.books.map((book) => (
-      <BookItem book={book} key={book.id} onBookSelect={this.onBookSelect} />
+  const renderBooks = () => {
+    const renderedBooks = books.map((book) => (
+      <BookItem book={book} key={book.id} onBookSelect={onBookSelect} />
     ));
 
     return renderedBooks;
   };
 
-  render() {
-    return <div className='list'>{this.renderBooks()}</div>;
-  }
-}
-
-const mapStateToProps = (state) => {
-  return {
-    books: state.books,
-  };
+  return <div className='list'>{renderBooks()}</div>;
 };
 
-export default connect(mapStateToProps, { selectBook })(BookList);
+export default BookList;
+
+// class BookList extends React.Component {
+//   onBookSelect = (book) => {
+//     this.props.selectBook(book);
+//   };
+
+//   renderBooks = () => {
+//     const renderedBooks = this.props.books.map((book) => (
+//       <BookItem book={book} key={book.id} onBookSelect={this.onBookSelect} />
+//     ));
+
+//     return renderedBooks;
+//   };
+
+//   render() {
+//     return <div className='list'>{this.renderBooks()}</div>;
+//   }
+// }
+
+// const mapStateToProps = (state) => {
+//   return {
+//     books: state.books,
+//   };
+// };
+
+// export default connect(mapStateToProps, { selectBook })(BookList);
