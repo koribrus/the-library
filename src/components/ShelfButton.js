@@ -3,7 +3,7 @@ import './ShelfButton.css';
 
 const ShelfButton = (props) => {
   return (
-    <button className='btn' onClick={props.onButtonClick}>
+    <button className={props.classes} onClick={props.onButtonClick}>
       {props.name}
     </button>
   );

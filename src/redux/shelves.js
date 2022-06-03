@@ -35,20 +35,18 @@ const initialState = {
       id: 1009,
     },
   ],
+  active: null,
 };
 
 const shelvesSlice = createSlice({
   name: 'shelves',
   initialState,
-  // reducers: {
-  //   getShelves: (state) => {
-  //     state.shelves = [...state.shelves];
-  //   },
-  // },
+  reducers: {
+    activate: (state, action) => {
+      state.active = action.payload;
+    },
+  },
 });
 
-export const { getShelves } = shelvesSlice.actions;
+export const { activate } = shelvesSlice.actions;
 export default shelvesSlice.reducer;
-
-//   selectedShelf: (state, action) => {},
-// },

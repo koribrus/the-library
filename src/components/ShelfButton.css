@@ -12,6 +12,14 @@
 
 .btn:hover {
   background-color: var(--tertiary-bg-hover);
-  /* opacity: 0.9; */
   transform: scale(102%);
+}
+
+.active {
+  background-color: var(--active-bg-btn);
+}
+
+.active:hover {
+  background-color: var(--active-bg-btn);
+  opacity: 0.9;
 }

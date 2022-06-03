@@ -2,7 +2,6 @@ import React from 'react';
 import './BookDetail.css';
 
 const BookDetail = ({ book }) => {
-  console.log(book);
   if (!book) return '';
 
   return (
