@@ -1,5 +1,44 @@
 .list {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel > * {
+  transition: 0.5s ease;
+  vertical-align: middle;
+}
+
+.carousel-overlay {
   display: flex;
-  justify-content: space-around;
-  font-family: proxima-nova, sans-serif;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.overlay-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  background-image: radial-gradient(445px at 100% 50%, #ffffff, #0000);
+}
+
+.overlay-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38%;
+  height: 100%;
+  background-image: radial-gradient(445px at 0% 50%, #ffffff, #0000);
 }

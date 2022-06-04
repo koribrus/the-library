@@ -1,18 +1,30 @@
 .book-details {
+  position: relative;
   color: var(--primary-text-lib);
   background-color: #ffffff;
-  font-family: freight-text-pro, serif;
-  font-weight: 400;
-  font-style: normal;
   padding: 1rem;
-  /* min-height: 431px; */
+}
+
+.book-title > h2 {
+  color: #ffffff;
+  background-color: var(--tertiary-bg-lib);
+  position: absolute;
+  top: -10%;
+  right: 50%;
+  transform: translateX(50%);
+  text-align: center;
+  padding: 0.5rem 2rem;
 }
 
 .book-details h2 {
+  font-family: freight-text-pro, serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 1rem;
 }
 
 .book-details p {
   max-width: 650px;
-  margin-bottom: 1rem;
+  padding-top: 3rem;
+  margin: 0 1rem;
 }

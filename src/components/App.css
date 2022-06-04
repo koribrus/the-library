@@ -17,6 +17,7 @@
   grid-template-columns: 2fr 1fr;
 }
 .container {
+  background-color: var(--primary-bg-lib);
   padding: 0 4rem;
 }
 
@@ -26,9 +27,6 @@
 
 .column-left {
   background-color: #ffffff;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   height: 100%;
   padding: 0.5rem;
 }
@@ -41,12 +39,8 @@
   border: 1px solid var(--secondary-bg-lib);
 }
 
-.book-detail {
-  /* padding: 1rem 1rem 0 1rem; */
-}
-
 .book-selection {
-  /* min-height: 323px; */
+  transition: 0.5s ease;
 }
 
 .book-view {
@@ -55,8 +49,3 @@
   align-items: center;
   align-self: center;
 }
-
-/* for BookDetail component */
-/* .book-detail {
-  height: 300px;
-} */

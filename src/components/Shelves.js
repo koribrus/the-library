@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import ShelfButton from './ShelfButton';
 import { fetchBooks } from '../redux/books';
 import { activate } from '../redux/shelves';
-
+import { setCurrent } from '../redux/slides';
 import './Shelves.css';
 
 const Shelves = () => {
@@ -12,8 +12,10 @@ const Shelves = () => {
   const dispatch = useDispatch();
 
   const onButtonClick = (id) => {
+    // * on button click we fetch shelf from Google, set active id to render BookViewer default, and reset the current slide to center.
     dispatch(fetchBooks(id));
     dispatch(activate(id));
+    dispatch(setCurrent(0));
   };
 
   const renderButtons = () => {

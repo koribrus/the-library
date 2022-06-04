@@ -6,7 +6,9 @@ const BookDetail = ({ book }) => {
 
   return (
     <div className='book-details'>
-      <h2>{`${book.volumeInfo.title} (${book.volumeInfo.publishedDate.slice(0, 4)})`}</h2>
+      <div className='book-title'>
+        <h2>{`${book.volumeInfo.title} (${book.volumeInfo.publishedDate.slice(0, 4)})`}</h2>
+      </div>
       <p>{book.volumeInfo.description}</p>
     </div>
   );
