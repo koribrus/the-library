@@ -6,7 +6,7 @@ const BookItem = ({ book, onBookSelect, current }) => {
   return (
     <div className='slide' style={{ transform: `translateX(${-current * 100}%)` }}>
       <div className='card' onClick={() => onBookSelect(book)}>
-        <a className='image' href={book.volumeInfo.infoLink}>
+        <a className='image' href={book.volumeInfo.infoLink} rel='noreferrer' target='_blank'>
           <img src={book.volumeInfo.imageLinks.thumbnail} alt='reading glasses and books on desk' />
         </a>
         <div className='content'>
