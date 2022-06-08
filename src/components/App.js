@@ -15,7 +15,8 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchBooks(1005));
-  }, [dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div>

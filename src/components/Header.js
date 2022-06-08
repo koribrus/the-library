@@ -7,7 +7,7 @@ const Header = () => {
       <div className='navbar'>
         <div className='navbar-top'></div>
         <div className='navbar-content'>
-          <a className='navbar-logo' href='#'>
+          <a className='navbar-logo' href='https://koribrus.io'>
             <p>koribrus.io</p>
           </a>
         </div>

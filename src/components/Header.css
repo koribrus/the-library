@@ -42,7 +42,7 @@
 .banner {
   position: relative;
   height: 28vh;
-  background-image: url('../img/blurred-background.jpg');
+  background-image: url('../img/glasses-old-books-desk.jpg');
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,12 +70,6 @@
 
 .banner p {
   color: var(--tertiary-text-lib);
-  /* font-family: freight-big-pro, serif;
-  font-weight: 300;
-  font-style: normal; */
-  /* font-family: freighttextcmp-pro, serif;
-  font-weight: lighter;
-  font-style: italic; */
   font-family: freight-big-pro, serif;
   font-weight: 400;
   font-style: italic;
