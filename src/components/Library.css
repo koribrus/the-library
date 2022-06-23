@@ -1,10 +1,4 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-.app {
+.app-lib {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,20 +6,20 @@
   height: 65vh;
 }
 
-.grid {
+.grid-lib {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
-.container {
+.container-lib {
   background-color: var(--primary-bg-lib);
   padding: 0 4rem;
 }
 
-.column {
+.column-lib {
   height: 100%;
 }
 
-.column-left {
+.column-left-lib {
   background-color: #ffffff;
   height: 100%;
   padding: 0.5rem;
@@ -40,6 +34,7 @@
 }
 
 .book-selection {
+  max-width: 1165.33px;
   transition: 0.5s ease;
 }
 

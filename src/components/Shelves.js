@@ -20,7 +20,7 @@ const Shelves = () => {
 
   const renderButtons = () => {
     const buttons = shelves.map((shelf) => {
-      const classes = active === shelf.id ? 'btn active' : 'btn';
+      const classes = active === shelf.id ? 'btn-lib active-lib' : 'btn-lib';
 
       return (
         <ShelfButton

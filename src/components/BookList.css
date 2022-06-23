@@ -1,8 +1,9 @@
-.list {
+.list-lib {
   position: relative;
   padding: 10px;
   text-align: center;
   transition: 0.5s ease;
+  overflow: hidden;
 }
 
 .carousel {
@@ -30,16 +31,16 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 38%;
+  width: 42%;
   height: 100%;
-  background-image: radial-gradient(445px at 100% 50%, #ffffff, #0000);
+  background-image: radial-gradient(445px at 80% 50%, #ffffff, #0000);
 }
 
 .overlay-right {
   position: absolute;
   top: 0;
   left: 0;
-  width: 38%;
+  width: 42%;
   height: 100%;
-  background-image: radial-gradient(445px at 0% 50%, #ffffff, #0000);
+  background-image: radial-gradient(445px at 20% 50%, #ffffff, #0000);
 }

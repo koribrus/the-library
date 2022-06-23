@@ -1,4 +1,4 @@
-.btn {
+.btn-lib {
   color: var(--tertiary-text-lib);
   background-color: var(--tertiary-bg-lib);
   font-family: proxima-nova, sans-serif;
@@ -10,16 +10,16 @@
   transition: 0.25s ease all;
 }
 
-.btn:hover {
+.btn-lib:hover {
   background-color: var(--tertiary-bg-hover);
   transform: scale(102%);
 }
 
-.active {
+.active-lib {
   background-color: var(--active-bg-btn);
 }
 
-.active:hover {
+.active-lib:hover {
   background-color: var(--active-bg-btn);
   opacity: 0.9;
 }

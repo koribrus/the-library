@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   shelves: [
     {
-      name: 'Sci Fi',
+      name: 'Sci/Fantasy',
       id: 1002,
     },
     {
@@ -11,31 +11,31 @@ const initialState = {
       id: 1003,
     },
     {
-      name: '5 Stars',
-      id: 1004,
-    },
-    {
       name: 'Philosophy',
       id: 1005,
-    },
-    {
-      name: 'Fantasy',
-      id: 1006,
     },
     {
       name: 'Fiction',
       id: 1007,
     },
     {
-      name: 'Exploration',
+      name: 'Travel',
       id: 1008,
     },
     {
-      name: 'Non-fiction',
-      id: 1009,
+      name: 'Society',
+      id: 1010,
+    },
+    {
+      name: 'Comics',
+      id: 1011,
+    },
+    {
+      name: 'Classics',
+      id: 1012,
     },
   ],
-  active: null,
+  active: 1005,
 };
 
 const shelvesSlice = createSlice({

@@ -1,8 +1,8 @@
-.slide {
+.slide-lib {
   display: inline-block;
 }
 
-.card {
+.card-lib {
   background-color: var(--secondary-bg-lib);
   display: flex;
   flex-direction: column;
@@ -12,11 +12,12 @@
   margin: auto 10px;
   border: 1px solid var(--secondary-text-lib);
 }
-.image {
+.image-lib {
   height: 196px;
   overflow: hidden !important;
+  cursor: pointer;
 }
-.content {
+.content-lib {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

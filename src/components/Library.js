@@ -6,11 +6,13 @@ import Shelves from './Shelves';
 import BookList from './BookList';
 import BookDetail from './BookDetail';
 import BookViewer from './BookViewer';
+import LibraryModal from './modals/LibraryModal';
 import { fetchBooks } from '../redux/books';
-import './App.css';
+import './Library.css';
 
-const App = () => {
+const Library = () => {
   const { selectedBook } = useSelector((state) => state.books);
+  const { showModal } = useSelector((state) => state.modal);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,12 +20,16 @@ const App = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const renderModal = () => {
+    return showModal ? <LibraryModal /> : '';
+  };
+
   return (
     <div>
       <Header />
-      <div className='app'>
-        <div className='container grid'>
-          <div className='column column-left'>
+      <div className='app-lib'>
+        <div className='container-lib grid-lib'>
+          <div className='column-lib column-left-lib'>
             <div className='column-insert'>
               <div className='book-detail'>
                 <BookDetail book={selectedBook} />
@@ -35,12 +41,13 @@ const App = () => {
             </div>
           </div>
           <div className='column book-view'>
-            <BookViewer />
+            <BookViewer width='384' height='575' />
           </div>
         </div>
       </div>
+      {renderModal()}
     </div>
   );
 };
 
-export default App;
+export default Library;

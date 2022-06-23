@@ -6,12 +6,12 @@ const CarouselControls = ({ prev, next }) => {
   return (
     <div>
       <button className='btn-carousel prev' onClick={prev}>
-        <div className='icon icon-left'>
+        <div className='icon-lib icon-left'>
           <IoIosArrowBack />
         </div>
       </button>
       <button className='btn-carousel next' onClick={next}>
-        <div className='icon icon-right'>
+        <div className='icon-lib icon-right'>
           <IoIosArrowForward />
         </div>
       </button>

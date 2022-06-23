@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-import App from './components/App';
+import Library from './components/Library';
 import store from './redux/configureStore';
 import { Provider } from 'react-redux';
 import './styles.css';
@@ -10,6 +10,6 @@ const root = ReactDOMClient.createRoot(container);
 
 root.render(
   <Provider store={store}>
-    <App />
+    <Library />
   </Provider>
 );

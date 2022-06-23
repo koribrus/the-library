@@ -34,11 +34,11 @@
   border-radius: 20px 0 0 20px;
 }
 
-.icon {
+.icon-lib {
   transition: 0.5s ease;
 }
 
-.btn-carousel:hover .icon {
+.btn-carousel:hover .icon-lib {
   transform: scale(110%);
 }
 

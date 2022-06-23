@@ -109,7 +109,9 @@ const initialState = {
 // * async thunk for fetching books from Google
 export const fetchBooks = createAsyncThunk('redux/fetchBooks', async (id) => {
   try {
-    const response = await axiosBooks.get(`${USER_ID}/bookshelves/${id}/volumes?key=${API_KEY}`);
+    const response = await axiosBooks.get(`${USER_ID}/bookshelves/${id}/volumes?key=${API_KEY}`, {
+      params: { maxResults: 40 },
+    });
     return response.data.items;
   } catch (err) {
     return err.message;
