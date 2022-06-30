@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/the-library/static/css/main.06dbcd5b.css",
+    "main.js": "/the-library/static/js/main.fe1b4b80.js",
+    "static/media/glasses-old-books-desk.jpg": "/the-library/static/media/glasses-old-books-desk.fe7fa3bbe76e3a339c27.jpg",
+    "index.html": "/the-library/index.html",
+    "main.06dbcd5b.css.map": "/the-library/static/css/main.06dbcd5b.css.map",
+    "main.fe1b4b80.js.map": "/the-library/static/js/main.fe1b4b80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06dbcd5b.css",
+    "static/js/main.fe1b4b80.js"
+  ]
+}
